@@ -67,6 +67,11 @@ export default function HomePage() {
       <header className="home-header">
         <h1 className="home-logo">NotebookLM</h1>
         <p className="home-subtitle">문서를 업로드하고 AI와 대화하세요</p>
+        <div style={{ marginTop: '20px' }}>
+          <button className="btn btn-primary" onClick={() => router.push('/neo')} style={{ background: '#ff008a', border: 'none', borderRadius: '100px' }}>
+            Try Neo-Brutalism Edition ⚡️
+          </button>
+        </div>
       </header>
 
       <div className="notebook-grid">

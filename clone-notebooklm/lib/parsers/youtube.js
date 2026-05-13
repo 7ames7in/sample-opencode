@@ -70,6 +70,9 @@ export async function parseYoutube(url) {
     metadata: {
       type: 'youtube',
       url,
+      watchUrl: `https://www.youtube.com/watch?v=${videoId}`,
+      embedUrl: `https://www.youtube.com/embed/${videoId}`,
+      thumbnailUrl: `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`,
       videoId,
       title,
       segments: transcript.length,
